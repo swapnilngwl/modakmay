@@ -4,36 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const galleryItems = [
-  {
-    src: "https://images.unsplash.com/photo-1606491956689-2ea866884784?w=600&q=80",
-    alt: "Steamed ukhdiche modak arranged on a traditional plate",
-    caption: "Ukhdiche Modak",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1589302168068-964664a07103?w=600&q=80",
-    alt: "Traditional Indian sweets and festive treats",
-    caption: "Festive Collection",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80",
-    alt: "Fresh Indian snacks and appetizers",
-    caption: "Kothimbir Vadi",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1601050690597-df0568fa7098?w=600&q=80",
-    alt: "Colorful Indian mithai and sweets",
-    caption: "Sweet Delights",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600&q=80",
-    alt: "Indian festival food spread",
-    caption: "Festival Specials",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1606491956689-2ea866884784?w=600&q=80",
-    alt: "Modak gift box for Ganesh festival",
-    caption: "Gift Boxes",
-  },
+  { src: "/gallery-1.jpg", alt: "Fresh ukhdiche modak", caption: "Ukhdiche Modak" },
+  { src: "/gallery-2.jpg", alt: "Handcrafted modak close-up", caption: "Made Fresh Daily" },
+  { src: "/gallery-3.jpg", alt: "Traditional steamed modak", caption: "Traditional Recipe" },
+  { src: "/gallery-4.jpg", alt: "Festive modak arrangement", caption: "Festive Specials" },
+  { src: "/gallery-5.jpg", alt: "Modakmay signature modak", caption: "Modakmay Special" },
+  { src: "/gallery-6.jpg", alt: "Modak gift box ready to order", caption: "Order on WhatsApp" },
 ];
 
 export function Gallery() {
@@ -48,15 +24,15 @@ export function Gallery() {
             A Feast for the Eyes
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
-            A glimpse of our handcrafted modak, vadi, and festive favourites —
-            made fresh with love every day.
+            Handcrafted ukhdiche modak — soft, fragrant, and steamed fresh
+            every day at Modakmay.
           </p>
         </div>
 
         <div className="mt-12 columns-1 gap-4 sm:columns-2 lg:columns-3">
           {galleryItems.map((item, i) => (
             <motion.div
-              key={i}
+              key={item.src}
               className="mb-4 break-inside-avoid overflow-hidden rounded-2xl"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

@@ -21,7 +21,10 @@ export const siteConfig = {
 
   /** One-line description for SEO and Google */
   description:
-    "Handcrafted ukhdiche modak, kothimbir vadi, and traditional Maharashtrian snacks. Fresh, authentic, and made with love in Pune.",
+    "Fresh authentic ukhdiche modak, kothimbir vadi, and traditional Maharashtrian snacks in Pune. Homemade daily since January 2025.",
+
+  /** Founded */
+  founded: "January 2025",
 
   /** Your website URL — update to https://modakmay.in when you buy the domain */
   url: "https://modakmay.vercel.app",
@@ -51,13 +54,12 @@ export const siteConfig = {
     country: "IN",
   },
 
-  /** Google Maps embed URL — see SETUP.md Step 4 for how to get this */
+  /** Google Maps embed URL */
   googleMapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.989!2d73.895!3d18.536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMThCsDMyJzA5LjYiTiA3M8KwNTMnNDIuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "https://maps.google.com/maps?q=18.565896,73.735623&z=16&output=embed",
 
   /** Link to open Google Maps app / directions */
-  googleMapsLink:
-    "https://maps.google.com/?q=VTP+Aethereus+Mahalunge+Pune",
+  googleMapsLink: "https://maps.app.goo.gl/VkMHo589ogao1kTHA",
 
   /** Business hours — shown on Contact section */
   hours: [

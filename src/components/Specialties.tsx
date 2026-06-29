@@ -8,7 +8,7 @@ const specialties = [
     icon: "🪷",
     name: "Ukhdiche Modak",
     description:
-      "Soft, steamed rice flour modak filled with fresh coconut and jaggery — the crown jewel of Ganesh festival and everyday indulgence.",
+      "Soft, steamed rice flour modak filled with fresh coconut and jaggery — our signature item, prepared fresh every day in small batches.",
     tag: "Signature",
     highlight: true,
   },
@@ -16,24 +16,8 @@ const specialties = [
     icon: "🌿",
     name: "Kothimbir Vadi",
     description:
-      "Crispy on the outside, soft inside — classic coriander fritters seasoned with traditional spices. Perfect tea-time snack.",
+      "Crispy on the outside, soft inside — classic coriander fritters seasoned with traditional spices. Perfect with chai.",
     tag: "Popular",
-    highlight: false,
-  },
-  {
-    icon: "🥥",
-    name: "Narali Bhat",
-    description:
-      "Fragrant sweet coconut rice — a festive favourite made with fresh coconut, jaggery, and aromatic spices.",
-    tag: "Festive",
-    highlight: false,
-  },
-  {
-    icon: "🍬",
-    name: "Shrikhand",
-    description:
-      "Creamy, rich strained yogurt dessert infused with saffron and cardamom — a cooling finish to any meal.",
-    tag: "Classic",
     highlight: false,
   },
   {
@@ -80,7 +64,7 @@ export function Specialties() {
         </div>
 
         <motion.div
-          className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-2"
           variants={container}
           initial="hidden"
           whileInView="show"

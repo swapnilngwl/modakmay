@@ -20,8 +20,8 @@ export function JsonLd() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 18.536,
-      longitude: 73.895,
+      latitude: 18.565896,
+      longitude: 73.735623,
     },
     servesCuisine: "Maharashtrian",
     priceRange: "₹₹",
