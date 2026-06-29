@@ -18,8 +18,8 @@ export const siteConfig = {
   description:
     "Handcrafted ukhdiche modak, kothimbir vadi, and traditional Maharashtrian snacks. Fresh, authentic, and made with love in Pune.",
 
-  /** Your website URL (use https://modakmay.in after domain is connected) */
-  url: "https://modakmay.in",
+  /** Your website URL — update to https://modakmay.in when you buy the domain */
+  url: "https://modakmay.vercel.app",
 
   /** Contact phone — digits only with country code, e.g. "919876543210" */
   phone: "918898421206",
