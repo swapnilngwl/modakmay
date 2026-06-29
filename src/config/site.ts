@@ -14,8 +14,8 @@ export const siteConfig = {
   /** Short tagline shown under the logo (header uses logo image instead) */
   tagline: "Taste of Tradition",
 
-  /** Logo images in public/ — generated from your brand artwork */
-  logo: "/logo-header.png",
+  /** Logo images in public/ — circular modak brand mark */
+  logo: "/logo-circle.png",
   logoIcon: "/logo-icon.png",
   logoFull: "/logo-full.png",
 
