@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { siteConfig, getWhatsAppLink, getPhoneLink } from "@/config/site";
+import { Logo } from "@/components/Logo";
 
 const navLinks = [
   { href: "#specialties", label: "Specialties" },
@@ -37,18 +38,8 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#" className="group flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-saffron text-lg font-bold text-white shadow-md">
-            M
-          </span>
-          <div>
-            <span className="font-serif text-xl font-bold text-brown-dark group-hover:text-saffron-dark">
-              {siteConfig.name}
-            </span>
-            <span className="hidden text-xs text-brown-light sm:block">
-              {siteConfig.tagline}
-            </span>
-          </div>
+        <a href="#" className="group flex items-center">
+          <Logo variant="header" />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

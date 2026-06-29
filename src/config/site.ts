@@ -11,8 +11,13 @@ export const siteConfig = {
   /** Business name — use the same spelling everywhere (website + Google) */
   name: "Modakmay",
 
-  /** Short tagline shown under the logo */
-  tagline: "Authentic Maharashtrian Delights",
+  /** Short tagline shown under the logo (header uses logo image instead) */
+  tagline: "Taste of Tradition",
+
+  /** Logo images in public/ — generated from your brand artwork */
+  logo: "/logo-header.png",
+  logoIcon: "/logo-icon.png",
+  logoFull: "/logo-full.png",
 
   /** One-line description for SEO and Google */
   description:
@@ -51,7 +56,8 @@ export const siteConfig = {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.989!2d73.895!3d18.536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMThCsDMyJzA5LjYiTiA3M8KwNTMnNDIuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
 
   /** Link to open Google Maps app / directions */
-  googleMapsLink: "https://maps.google.com/?q=Koregaon+Park+Pune",
+  googleMapsLink:
+    "https://maps.google.com/?q=VTP+Aethereus+Mahalunge+Pune",
 
   /** Business hours — shown on Contact section */
   hours: [

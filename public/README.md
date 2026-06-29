@@ -19,3 +19,10 @@ Suggested filenames:
 
 ### 3. favicon.svg
 Already included — the orange "M" icon in browser tabs.
+
+### 4. logo.png (YOUR BRAND LOGO)
+- Size: 200×200 px or larger (square works best)
+- Format: PNG with transparent background (best)
+- Save as: `public/logo.png`
+- Shows in header and footer automatically
+- Until you add this file, the orange "M" placeholder is shown

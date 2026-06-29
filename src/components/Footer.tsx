@@ -1,5 +1,6 @@
 import { Instagram, Facebook, Youtube } from "lucide-react";
 import { siteConfig, getFullAddress } from "@/config/site";
+import { Logo } from "@/components/Logo";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -9,14 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-saffron text-lg font-bold text-white">
-                M
-              </span>
-              <span className="font-serif text-xl font-bold text-white">
-                {siteConfig.name}
-              </span>
-            </div>
+            <Logo variant="full" className="brightness-110" />
             <p className="mt-3 text-sm leading-relaxed text-white/60">
               {siteConfig.description}
             </p>
