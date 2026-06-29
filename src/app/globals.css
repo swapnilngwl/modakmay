@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff8f0;
+  --color-cream-dark: #f5ebe0;
+  --color-saffron: #e8890c;
+  --color-saffron-light: #f5a623;
+  --color-saffron-dark: #c46f00;
+  --color-brown: #5c3d2e;
+  --color-brown-dark: #3d2314;
+  --color-brown-light: #8b6f5e;
+  --color-gold: #d4a853;
+
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-brown-dark);
+}
+
+::selection {
+  background-color: var(--color-saffron);
+  color: white;
+}
+
+/* Subtle grain texture overlay for premium feel */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+.section-padding {
+  @apply px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24;
+}
+
+.section-heading {
+  @apply font-serif text-3xl font-bold tracking-tight text-brown-dark sm:text-4xl lg:text-5xl;
+}
+
+.section-subheading {
+  @apply mt-4 max-w-2xl text-base leading-relaxed text-brown-light sm:text-lg;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-saffron px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-saffron/25 transition-all duration-300 hover:bg-saffron-dark hover:shadow-xl hover:shadow-saffron/30 active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-brown/20 bg-white/80 px-6 py-3 text-sm font-semibold text-brown-dark backdrop-blur-sm transition-all duration-300 hover:border-saffron hover:text-saffron-dark active:scale-[0.98];
+}
+
+.card {
+  @apply rounded-2xl border border-brown/10 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md;
+}
